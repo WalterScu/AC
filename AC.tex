@@ -1,0 +1,26 @@
+% !TEX root=AC.tex
+\documentclass{amsart}
+\usepackage{notestemplate}
+\title{Algebraic Curves and Moduli Problems}
+\author{Chow Haitao}
+\begin{document}
+\maketitle
+\section{Preliminaries}
+Left to be added!
+\section{Algebraic Curves}
+Let $C \subseteq \mathbb{P}^n$ be an algebraic curves.
+It is well known result that there are one-to-one correspondence between following three objects
+\[
+\{\textbf{line bundles over }C \} \longleftrightarrow \{\textbf{invertable sheaves over }C \}/\sim \longleftrightarrow \{\textbf{divisors over }C\}/\sim
+\]
+We need to use these correspondences to prove following result
+\begin{secthm}
+	$\pica (C) \simeq H^1 (C, \sheaf{C}^*)$
+\end{secthm}
+At the very beginning, we need some knowledge about sheaf cohomology.
+Suppose $\mathcal{F}$ be a sheaf of $\sheaf{C}$-modules over $C$.
+\begin{secdefn}[\v Cech resolution]
+	Let $\mathcal{U}=\{U_i \}$ be open cover of X, i.e. every $U_i \rightarrow X$ is open immersion, where $X$ is a scheme, and $\mathcal{F}$ be a $\mathcal{O}_X$-module. Given an finite index set $I$, we have a open subset $\bigcap_{i \in I} U_i$ of $X$. Set $$C_k(\mathcal{U},\mathcal{F}) = \prod_{|I|=k}\mathcal{F}(\bigcap_{i \in I} U_i)$$
+	$C_*(\mathcal{U},\mathcal{F})$ is called \v Cech complex of open cover $\mathcal{U}$ and sheaf $\mathcal{F}$.
+\end{secdefn} 
+\end{document}
